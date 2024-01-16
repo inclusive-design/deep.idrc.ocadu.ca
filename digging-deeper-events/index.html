@@ -63,34 +63,14 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <script type='text/javascript' src='/wp-content/themes/blaskan_custom/js/libs/modernizr.min.js?ver=6.3.1' id='modernizr-js'></script>
 <script type='text/javascript' src='/wp-includes/js/jquery/jquery.min.js?ver=3.7.0' id='jquery-core-js'></script>
 <script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1' id='jquery-migrate-js'></script>
-<script type='text/javascript' src='/wp-content/themes/blaskan/js/libs/jquery.fitvids.js?ver=6.3.1' id='jquery-fitvids-js'></script>
+<!-- <script type='text/javascript' src='/wp-content/themes/blaskan/js/libs/jquery.fitvids.js?ver=6.3.1' id='jquery-fitvids-js'></script> -->
 <script type='text/javascript' src='/wp-content/themes/blaskan_custom/js/mylibs/helper.js?ver=6.3.1' id='mobile-boilerplate-helper-js'></script>
 <script type='text/javascript' id='blaskan-js-extra'>
 /* <![CDATA[ */
 var objectL10n = {"blaskan_navigation_title":"- Navigation -"};
 /* ]]> */
 </script>
-<script type='text/javascript' src='/wp-content/themes/blaskan/js/script.js?ver=6.3.1' id='blaskan-js'></script>
-<script type='text/javascript' src='/wp-content/plugins/infusion-videoPlayer-wp-plugin/lib/videoPlayer/lib/infusion/MyInfusion.js' id='infusion-js'></script>
-<script type='text/javascript' src='/wp-content/plugins/infusion-videoPlayer-wp-plugin/lib/videoPlayer/lib/jquery-ui/js/jquery.ui.button.js' id='jqueryUiButton-js'></script>
-<script type='text/javascript' src='/wp-content/plugins/infusion-videoPlayer-wp-plugin/lib/videoPlayer/lib/captionator/js/captionator.js' id='captionator-js'></script>
-<script type='text/javascript' src='/wp-content/plugins/infusion-videoPlayer-wp-plugin/lib/videoPlayer/js/VideoPlayer_framework.js' id='VideoPlayer_framework-js'></script>
-<script type='text/javascript' src='/wp-content/plugins/infusion-videoPlayer-wp-plugin/lib/videoPlayer/js/VideoPlayer_showHide.js' id='VideoPlayer_showHhide-js'></script>
-<script type='text/javascript' src='/wp-content/plugins/infusion-videoPlayer-wp-plugin/lib/videoPlayer/js/ToggleButton.js' id='ToggleButton-js'></script>
-<script type='text/javascript' src='/wp-content/plugins/infusion-videoPlayer-wp-plugin/lib/videoPlayer/js/MenuButton.js' id='MenuButton-js'></script>
-<script type='text/javascript' src='/wp-content/plugins/infusion-videoPlayer-wp-plugin/lib/videoPlayer/js/VideoPlayer_html5Captionator.js' id='VideoPlayer_html5Captionator-js'></script>
-<script type='text/javascript' src='/wp-content/plugins/infusion-videoPlayer-wp-plugin/lib/videoPlayer/js/VideoPlayer_media.js' id='VideoPlayer_media-js'></script>
-<script type='text/javascript' src='/wp-content/plugins/infusion-videoPlayer-wp-plugin/lib/videoPlayer/js/VideoPlayer_transcript.js' id='VideoPlayer_transcript-js'></script>
-<script type='text/javascript' src='/wp-content/plugins/infusion-videoPlayer-wp-plugin/lib/videoPlayer/js/VideoPlayer_intervalEventsConductor.js' id='VideoPlayer_intervalEventsConductor-js'></script>
-<script type='text/javascript' src='/wp-content/plugins/infusion-videoPlayer-wp-plugin/lib/videoPlayer/js/VideoPlayer_controllers.js' id='VideoPlayer_controllers-js'></script>
-<script type='text/javascript' src='/wp-content/plugins/infusion-videoPlayer-wp-plugin/lib/videoPlayer/js/VideoPlayer.js' id='VideoPlayer-js'></script>
-<script type='text/javascript' src='/wp-content/plugins/infusion-videoPlayer-wp-plugin/lib/videoPlayer/js/VideoPlayer_uiOptions.js' id='VideoPlayer_uiOptions-js'></script>
-<script type='text/javascript' src='/wp-content/plugins/infusion-videoPlayer-wp-plugin/vpPlugin-noConflict.js?ver=6.3.1' id='no_conflict_script-js'></script>
-<script type='text/javascript' id='uio-js-extra'>
-/* <![CDATA[ */
-var phpData = {"pluginUrl":"https:\/\/deep.idrc.ocadu.ca\/wp-content\/plugins\/uio-wordpress-plugin-master\/","uioTemplateSelector":"body","uioTocSelector":"#main"};
-/* ]]> */
-</script>
+<script type='text/javascript' src='/wp-content/plugins/uio-wordpress-plugin-master/lib/infusion/infusion-uiOptions.js?ver=6.3.1' id='infusion-js'></script>
 <script type='text/javascript' src='/wp-content/plugins/uio-wordpress-plugin-master/uio.js?ver=6.3.1' id='uio-js'></script>
 <link rel="https://api.w.org/" href="/wp-json/" /><link rel="alternate" type="application/json" href="/wp-json/wp/v2/pages/2340" /><link rel="canonical" href="/digging-deeper-events/" />
 <link rel='shortlink' href='/?p=2340' />
@@ -106,7 +86,7 @@ var phpData = {"pluginUrl":"https:\/\/deep.idrc.ocadu.ca\/wp-content\/plugins\/u
 <meta name="geo.placename" content="Toronto, Ontario">
 <meta name="geo.region" content="CA-ON">
 <!-- End of Geo markup --><script type="text/javascript">
-function addslashes (str) { // http://phpjs.org/functions/addslashes/
+function addslashes (str) { // https://phpjs.org/functions/addslashes/
 	return (str + '').replace(/[\"']/g, '\$&').replace(/\u0000/g, '\0');
 }
 </script><style type="text/css" id="custom-background-css">
@@ -118,16 +98,7 @@ body.custom-background { background-color: #e7e8ea; }
 <meta name="msapplication-TileImage" content="/wp-content/uploads/2021/06/cropped-cropped-DEEP-2021-blue-horizontal-270x270.gif" />
 		</head>
 <body class="page-template-default page page-id-2340 custom-background background-image header-image simple-menu content-wide sidebar content-wide-sidebar sans-serif footer-widgets">
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-41514218-3', 'ocad.ca');
-  ga('send', 'pageview');
-
-</script>
 <div id="site">
 	<div id="wrapper">
 		<header id="header" role="banner">
@@ -153,7 +124,7 @@ body.custom-background { background-color: #e7e8ea; }
 
 
 
-<p>If you want to hear about all IDRC events and receive our <em>Recount</em> newsletter please add your name to our mailing list (we promise it will only be used by IDRC to share IDRC news and information). <a href="http://eepurl.com/hBMRev">Subscribe Now!</a></p>
+<p>If you want to hear about all IDRC events and receive our <em>Recount</em> newsletter please add your name to our mailing list (we promise it will only be used by IDRC to share IDRC news and information). <a href="https://eepurl.com/hBMRev">Subscribe Now!</a></p>
 
 
 
@@ -576,8 +547,8 @@ body.custom-background { background-color: #e7e8ea; }
 		<!-- / #primary -->
     	
 		<footer id="footer">
-				<div id="footer-widgets" role="complementary"><section id="custom_html-3" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br><a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div></section><section id="custom_html-2" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget">OCAD University, 100 McCaul Street, Toronto, Ontario, Canada
-<br><a href="https://maps.google.ca/maps/ms?msid=205273541332453756176.0004de62338d798131072&msa=0&ll=43.655888,-79.393945&spn=0.025398,0.037551">Click for map</a></div></section><section id="social-widget-2" class="widget Social_Widget"><h3 class="title">Follow Us!</h3><div class="socialmedia-buttons smw_left"><a href="http://twitter.com/DEEP_IDRC" rel="nofollow" target="_blank"><img width="32" height="32" src="/wp-content/plugins/social-media-widget/images/default/32/twitter.png" 
+				<div id="footer-widgets" role="complementary"><section id="custom_html-3" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div></section><section id="custom_html-2" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget">OCAD University, 100 McCaul Street, Toronto, Ontario, Canada
+<br><a href="https://maps.google.ca/maps/ms?msid=205273541332453756176.0004de62338d798131072&msa=0&ll=43.655888,-79.393945&spn=0.025398,0.037551">Click for map</a></div></section><section id="social-widget-2" class="widget Social_Widget"><h3 class="title">Follow Us!</h3><div class="socialmedia-buttons smw_left"><a href="https://twitter.com/DEEP_IDRC" rel="nofollow" target="_blank"><img width="32" height="32" src="/wp-content/plugins/social-media-widget/images/default/32/twitter.png" 
 				alt="Follow Us on Twitter" 
 				title="Follow Us on Twitter" style="opacity: 0.8; -moz-opacity: 0.8;" class="fade" /></a><a href="https://www.linkedin.com/in/wecountproject/" rel="nofollow" target="_blank"><img width="32" height="32" src="/wp-content/plugins/social-media-widget/images/default/32/linkedin.png" 
 				alt="Follow Us on LinkedIn" 

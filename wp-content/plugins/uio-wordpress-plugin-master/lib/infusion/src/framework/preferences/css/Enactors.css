@@ -2,43 +2,14 @@
  * General prefs editor styling used to apply preferences
  * !important is used for all styles to ensure that Preferences Framework's enactors are able to override the page's default styles.
  */
-.fl-font-serif,
-.fl-font-serif * {
-  font-family: Georgia, Times, "Times New Roman", "Book Antiqua", serif !important;
-}
-.fl-font-sans,
-.fl-font-sans * {
-  font-family: Tahoma, Verdana, Helvetica, sans-serif !important;
-}
-.fl-font-monospace,
-.fl-font-monospace * {
-  font-family: "Courier New, Courier", monospace !important;
-}
-.fl-font-arial,
-.fl-font-arial * {
-  font-family: "Arial" !important;
-}
-.fl-font-verdana,
-.fl-font-verdana * {
-  font-family: "Verdana" !important;
-}
-.fl-font-times,
-.fl-font-times * {
-  font-family: Georgia, Times, "Times New Roman", serif !important;
-}
-.fl-font-courier,
-.fl-font-courier * {
-  font-family: "Courier New", Courier, monospace !important;
-}
-.fl-font-comic-sans,
-.fl-font-comic-sans * {
-  font-family: "Comic Sans MS", sans-serif !important;
-}
-.fl-text-larger input,
-.fl-text-larger button {
+.fl-input-enhanced button,
+.fl-input-enhanced input,
+.fl-input-enhanced select,
+.fl-input-enhanced textarea,
+.fl-input-enhanced .fl-input-enhance {
   font-size: 125% !important;
 }
-.fl-link-enhanced a {
+.fl-input-enhanced a {
   font-size: 125% !important;
   text-decoration: underline !important;
   font-weight: bold !important;
@@ -136,6 +107,12 @@
   margin-right: -0.1em;
   margin-bottom: -0.1em;
   margin-left: -0.1em;
+}
+.fl-theme-bw .fl-textfieldStepper .fl-textfieldStepper-textField {
+  border: solid 1px #000;
+}
+.fl-theme-bw .fl-textfieldStepper .fl-textfieldStepper-button:disabled {
+  visibility: hidden;
 }
 .fl-theme-bw.fl-inverted-color,
 .fl-theme-bw.fl-inverted-color *,
@@ -338,6 +315,12 @@
   margin-bottom: -0.1em;
   margin-left: -0.1em;
 }
+.fl-theme-wb .fl-textfieldStepper .fl-textfieldStepper-textField {
+  border: solid 1px #fff;
+}
+.fl-theme-wb .fl-textfieldStepper .fl-textfieldStepper-button:disabled {
+  visibility: hidden;
+}
 .fl-theme-wb.fl-inverted-color,
 .fl-theme-wb.fl-inverted-color *,
 .fl-preview-theme.fl-theme-wb.fl-inverted-color {
@@ -538,6 +521,12 @@
   margin-right: -0.1em;
   margin-bottom: -0.1em;
   margin-left: -0.1em;
+}
+.fl-theme-yb .fl-textfieldStepper .fl-textfieldStepper-textField {
+  border: solid 1px #ff0;
+}
+.fl-theme-yb .fl-textfieldStepper .fl-textfieldStepper-button:disabled {
+  visibility: hidden;
 }
 .fl-theme-yb.fl-inverted-color,
 .fl-theme-yb.fl-inverted-color *,
@@ -740,6 +729,12 @@
   margin-bottom: -0.1em;
   margin-left: -0.1em;
 }
+.fl-theme-by .fl-textfieldStepper .fl-textfieldStepper-textField {
+  border: solid 1px #000;
+}
+.fl-theme-by .fl-textfieldStepper .fl-textfieldStepper-button:disabled {
+  visibility: hidden;
+}
 .fl-theme-by.fl-inverted-color,
 .fl-theme-by.fl-inverted-color *,
 .fl-preview-theme.fl-theme-by.fl-inverted-color {
@@ -941,6 +936,12 @@
   margin-bottom: -0.1em;
   margin-left: -0.1em;
 }
+.fl-theme-lgdg .fl-textfieldStepper .fl-textfieldStepper-textField {
+  border: solid 1px #bdbdbb;
+}
+.fl-theme-lgdg .fl-textfieldStepper .fl-textfieldStepper-button:disabled {
+  visibility: hidden;
+}
 .fl-theme-lgdg.fl-inverted-color,
 .fl-theme-lgdg.fl-inverted-color *,
 .fl-preview-theme.fl-theme-lgdg.fl-inverted-color {
@@ -1047,4 +1048,20 @@
   margin-right: -0.1em;
   margin-bottom: -0.1em;
   margin-left: -0.1em;
+}
+.fl-font-arial:not([class*='icon']),
+.fl-font-arial *:not([class*='icon']) {
+  font-family: Arial !important;
+}
+.fl-font-verdana:not([class*='icon']),
+.fl-font-verdana *:not([class*='icon']) {
+  font-family: Verdana !important;
+}
+.fl-font-times:not([class*='icon']),
+.fl-font-times *:not([class*='icon']) {
+  font-family: Georgia, Times, Times New Roman, serif !important;
+}
+.fl-font-comic-sans:not([class*='icon']),
+.fl-font-comic-sans *:not([class*='icon']) {
+  font-family: Comic Sans MS, sans-serif !important;
 }

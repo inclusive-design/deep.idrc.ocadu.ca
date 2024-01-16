@@ -1,4 +1,3 @@
-
 /*
 Copyright 2015 OCAD University
 
@@ -11,28 +10,35 @@ https://github.com/fluid-project/infusion/raw/master/Infusion-LICENSE.txt
 */
 
 $(document).ready(function () {
+  var tocPlaceholder = "<div class='flc-toc-tocContainer toc'> </div>";
+  var uioTemplateSpec = {
+    uioTemplate: {
+      href:
+        window.location.protocol +
+        "//" +
+        window.location.host +
+        "/wp-content/plugins/uio-wordpress-plugin-master/template.html",
+    },
+  };
 
-    var tocPlaceholder = "<div class='flc-toc-tocContainer toc'> </div>";
-    var uioTemplateSpec = {
-        uioTemplate : {
-            href : phpData.pluginUrl + "template.html"
-        }
-    };
+  // Fetch the template text, and when we have it, proceed
+  fluid.fetchResources(uioTemplateSpec, function (spec) {
+    // Add the sliding panel template to the page
+    $("body").prepend(spec.uioTemplate.resourceText);
 
-    // Fetch the template text, and when we have it, proceed
-    fluid.fetchResources(uioTemplateSpec, function (spec) {
+    // Add the table of contents placeholder to the page
+    $("#main").prepend(tocPlaceholder);
 
-        // Add the sliding panel template to the page
-        $(phpData.uioTemplateSelector).prepend(spec.uioTemplate.resourceText);
-
-        // Add the table of contents placeholder to the page
-        $(phpData.uioTocSelector).prepend(tocPlaceholder);
-
-        // Create the prefs editor
-        fluid.uiOptions.prefsEditor(".flc-prefsEditor-separatedPanel", {
-            "templatePrefix": phpData.pluginUrl + "lib/infusion/src/framework/preferences/html/",
-            "messagePrefix": phpData.pluginUrl + "lib/infusion/src/framework/preferences/messages/",
-            "tocTemplate": phpData.pluginUrl + "lib/infusion/src/components/tableOfContents/html/TableOfContents.html"
-        });
+    // Create the prefs editor
+    fluid.uiOptions.prefsEditor(".flc-prefsEditor-separatedPanel", {
+      terms: {
+        templatePrefix:
+          "/wp-content/plugins/uio-wordpress-plugin-master/lib/infusion/src/framework/preferences/html/",
+        messagePrefix:
+          "/wp-content/plugins/uio-wordpress-plugin-master/lib/infusion/src/framework/preferences/messages/",
+      },
+      tocTemplate:
+        "/wp-content/plugins/uio-wordpress-plugin-master/lib/infusion/src/components/tableOfContents/html/TableOfContents.html",
     });
+  });
 });
